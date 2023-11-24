@@ -1,12 +1,5 @@
 const express = require("express");
 const app = express();
-app.use(
-  cors({
-    origin: "https://courageous-faloodeh-e90048.netlify.app/", // Replace with your Netlify frontend URL
-    methods: "*",
-    credentials: true, // Enable credentials (cookies, authorization headers, etc.)
-  })
-);
 
 const dbConfig = require("./db");
 const roomsRoute = require("./routes/roomRoute");
